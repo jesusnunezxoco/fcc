@@ -1,105 +1,131 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Animal Hospital - Where the Animals Heal You</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- NAVBAR -->
-        <header id="header">
-            <a href="#"><span><img src="ball_stick.jpg" id="header-img"></span></a>
-            <nav id="nav-bar">  
-                <ul>
-                    <a href="#features-section" class="nav-link"><li>Features</li></a>
-                    <a href="#howto-section" class="nav-link"><li>How to Use</li></a>
-                    <a href="#prices-section" class="nav-link"><li>Prices</li></a>
-                </ul>
-            </nav>
-        </header>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Animal Hospital - Where the Animals Heal You</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- *NAVBAR* -->
+    <header id="header">
+      <div id="logo">
+        <img
+          src="https://image.made-in-china.com/202f0j00YKMRNUtDYPbv/Funny-Cat-Finger-Sets-Funny-Little-Hand-Model-Massage-Pet-Supplies.webp"
+          id="header-img"
+        />
+        <h1>Animal Hospital</h1>
+      </div>
+      <nav id="nav-bar">
+        <a href="#about-section" class="nav-link">About Us</a>
+        <a href="#about-section" class="nav-link">Why Us</a>
+        <a href="#howto-section" class="nav-link">In Action</a>
+        <a href="#services-section" class="nav-link">Services</a>
+      </nav>
+    </header>
 
-        <main>
-            <!-- WELCOME -->
-            <section id="welcome-section">
-                <p>Animals that heal</p>
-                <form id="form">
-                    <input id="email" type="email" placeholder="Enter your email address">
-                    <button>GET STARTED</button>
-                </form>
-            </section>
-            <!-- FEATURES -->
-            <section id="features-section">
-                <article class="feature-article">
-                    <img class="feature-pic" src="ball.jpeg">
-                    <div class="feature-text">
-                        <h2>Expert Care</h2>
-                    <p>Your delicate human body is in our paws</p>
-                    </div>
-                </article>
-                <article class="feature-article">
-                    <img class="feature-pic" src="ball.jpeg">
-                    <div class="feature-text">
-                        <h2>Blood Transfusions</h2>
-                    <p>We cleanse your blood of its pesky nutrients</p>
-                    </div>
-                </article>
-                <article class="feature-article">
-                    <img class="feature-pic" src="">
-                    <div class="feature-text">
-                        <h2>Pain Therapy</h2>
-                    <p>We use pain to therapize you.</p>
-                    </div>
-                </article>
-            </section>
-        <!-- HOW TO VIDEO -->
-            <section id="howto-section">
-                <iframe 
-                width="560" 
-                height="315" 
-                id="video"
-                src="https://www.youtube.com/embed/c5aRlPa5WJw?controls=0" 
-                frameborder="0" 
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    <main>
+      <!-- *WELCOME* -->
+      <section id="welcome-section">
+        <div id="welcome-content">
+          <p>Animals that heal</p>
+          <form
+            id="form"
+            method="POST"
+            action="https://www.freecodecamp.com/email-submit"
+          >
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+              maxlength="50"
+              aria-label="Enter you email address"
+            />
+            <input id="submit" type="submit" />
+          </form>
+        </div>
+      </section>
 
-             
-            </section>
-            <!-- PRICES -->
-            <section id="prices-section">
-                <article class="item-price">
-                    <h4>Bamboo Stick and Ball</h4>
-                    <img src="bat.jpg" alt="">
-                    <p>Our value model. This stick and ball set is made for the everday person. It makes a wonderful stocking stuffer.</p>
-                    <h4>$50</h4>
-                    <button>SELECT</button>
-                </article>
-                <article class="item-price">
-                    <h4>Oak Stick and Ball</h4>
-                    <img src="bat.jpg" alt="">
-                    <p>Our standard model. This stick and ball set is made of fine quality American Oak.</p>
-                    <h4>$100</h4>
-                    <button>SELECT</button>
-                </article>
-                <article class="item-price">
-                    <h4>Steel Stick and Ball</h4>
-                    <img src="bat.jpg" alt="">
-                    <p>Our best value. This steel was sourved humanely from Japan.</p>
-                    <h4>$500</h4>
-                    <button>SELECT</button>
-                </article>
-                <article class="item-price">
-                    <h4>Adementite Stick and Ball</h4>
-                    <img src="bat.jpg" alt="">
-                    <p>Our best model. This stick and ball set is for those who want quality and strength.</p>
-                    <h4>$10000</h4>
-                    <button>SELECT</button>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright 2020, Ball & Stick Inc.</p>
-        </footer>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </body>
+      <!-- *ABOUT* -->
+      <section id="about-section" class="h-margin">
+        <h2>About Us</h2>
+        <img src='./assets/hospital.jpg' alt="Our exquisite medical facility">
+        <p>
+          Exercitation fugiat et ullamco ut. In veniam quis magna reprehenderit
+          ea consequat aliquip. Est cupidatat eu esse Lorem et. Consequat sunt
+          eiusmod officia eiusmod tempor ullamco eiusmod culpa adipisicing
+          consectetur cupidatat. Fugiat ipsum laboris incididunt anim fugiat et
+          sit. Nostrud ullamco aliqua deserunt sit et.
+        </p>
+        <p>
+          Qui tempor dolore eiusmod incididunt officia cillum sunt consequat
+          aliqua do. Sit excepteur deserunt voluptate veniam laborum
+          adipisicing. Irure est commodo magna nisi nulla est ad eu tempor
+          cupidatat duis Lorem enim tempor. Aliquip enim irure ipsum aute
+          incididunt culpa. Dolore proident Lorem ullamco qui.
+        </p>
+      </section>
+      <!-- *WHY CHOOSE US* -->
+      <section class="h-margin">
+        <h2>Why Choose Us?</h2>
+        <article>
+          <div class="about-text">
+            <h3>Expert Care</h3>
+            <p>Your delicate human body is in our paws</p>
+          </div>
+        </article>
+        <article>
+          <img class="about-pic" src="ball.jpeg" />
+          <div class="about-text">
+            
+          </div>
+        </article>
+        <article>
+          <img id="about-pic" src="ball.jpeg" />
+          <div class="about-text">
+            <h3>Pain Therapy</h3>
+            <p>We use pain to therapize you.</p>
+          </div>
+        </article>
+      </section>
+      <!-- *HOW TO VIDEO* -->
+      <section id="howto-section">
+          <h2>See Our Work In Action</h2>
+        <iframe
+          width="560"
+          height="315"
+          id="video"
+          src="https://www.youtube.com/embed/c5aRlPa5WJw?controls=0"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </section>
+      <!-- *SERVICES* -->
+      <section id="services-section">
+          <h2>Our Services</h2>
+        <article>
+            <h3>Blood Transfusion</h3>
+            <p>Ex laboris adipisicing et fugiat.</p>
+           
+            <button>SELECT</button>
+        </article>
+
+        <article>
+            <h3>Blood Transfusions</h3>
+            <p>We cleanse your blood of its pesky nutrients</p>
+            <p class="service-price">$300</p>
+            <button>SELECT</button>
+        </article>
+      </section>
+    </main>
+    <!-- *FOOTER* -->
+    <footer>
+      <p>Created by Jesus Nunez Xoconoxtle</p>
+    </footer>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
 </html>
