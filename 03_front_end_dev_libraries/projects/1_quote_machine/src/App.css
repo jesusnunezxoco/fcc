@@ -1,38 +1,80 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  width: 100vw;
+  background-color: cornflowerblue;
+}
+
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 60vw;
+  background-color: rgb(196, 210, 235);
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+
+#quote-content {
+  padding: 2rem;
+}
+
+#author {
+  margin-top: 1rem;
+}
+
+#quote-buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.quote-button {
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  font-size: 1rem;
+  border-radius: 10%;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+#tweet-quote {
+  background-color: cornflowerblue;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#new-quote {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 3rem;
+  
+}
+
+
+@media screen and (max-width: 500px) {
+  #quote-buttons {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .quote-button {
+    margin-top: 1rem;
+  }
+
+  #quote-content {
+    padding: 1rem;
   }
 }
